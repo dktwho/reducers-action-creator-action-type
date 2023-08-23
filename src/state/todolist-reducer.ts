@@ -18,7 +18,9 @@ export const todolistReducer = (state: TodolistType[], action: ActionType):Todol
         case 'CHANGE-TODOLIST-TITLE': {
            return state.map(tl => tl.id === action.id ? {...tl, title: action.title} : tl)
         }
-
+        case 'CHANGE-TODOLIST-FILTER': {
+            return state.map(tl => tl.id === action.id ? {...tl, filter: action.filter} : tl)
+        }
         default: {
             return state
         }
