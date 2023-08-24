@@ -7,7 +7,7 @@ import {
     removeTodolistAC,
     todolistsReducer2
 } from "./todolist-reducer2";
-import {AddTodolistAC, ChangeTodolistFilterAC, ChangeTodolistTitleAC, todolistReducer} from "./todolist-reducer";
+
 
 test('correct todolist should be removed', () => {
     let todolistId1 = v1()
